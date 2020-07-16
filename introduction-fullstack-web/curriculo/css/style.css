@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+body {
+    background-color: #A45FB0;
+    font-family: 'Nova Square', cursive;
+    cursor: url(https://i.imgur.com/xin7k1E.jpg), auto !important;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+header {
+    color: #FCEBBB;
+    font-style: italic;
+}
+
+main {
+    width: 860px;
+    float: left;
+}
+
+aside {
+    float: left;
+    margin-left: 20px;
+}
+
+footer {
+    padding-top: 10px;
+}
+
+p {
+    text-align: justify;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+hr {
+    color: #fff;
+}
+
+header, footer{
+    text-align: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+aside #contact-header {
+    text-align: center;
+}
+
+aside img {
+    border: 5px double #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+aside ul {
+    list-style: none;
+}
+
+@media only screen and (max-width: 1320px) {
+    main {
+        width: 100%;
+    }
+    
+    aside {
+        width: 100%;
+        text-align: center;
+    }
+}

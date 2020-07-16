@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Ytalo William</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Currículo - Ytalo William</h1>
+    </header>
+    <div id="content">
+        <main>
+            <section id="perfil">
+                <h2>Perfil</h2>
+                <p>
+                    (descrição pessoal)
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at diam commodo, fringilla felis sed, lacinia est. Fusce ac consectetur orci. Ut imperdiet aliquam aliquam. Aliquam mi leo, fermentum at iaculis et, blandit eu nisl. Praesent vel dignissim quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed convallis tempus gravida. Aliquam leo odio, ultricies a arcu vel, congue volutpat felis. Mauris tristique ut nunc eget rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </p>
+            </section>
+            <hr>
+            <section id="education">
+                <h2>Formação acadêmica</h2>
+                <p>
+                   (ensino médio, superior, educação nãoformal, etc.)
+                   <ul type="none">
+                       <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at diam commodo, fringilla felis sed, lacinia est.</li>
+                       <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at diam commodo, fringilla felis sed, lacinia est.</li>
+                       <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at diam commodo, fringilla felis sed, lacinia est.</li>
+                   </ul>
+                </p>
+            </section>
+            <hr>
+            <section id="experience">
+                <h2>Experiência profissional</h2>
+                <p>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at diam commodo, fringilla felis sed, lacinia est.</li>
+                    <li>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at diam commodo, fringilla felis sed, lacinia est.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at diam commodo, fringilla felis sed, lacinia est.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at diam commodo, fringilla felis sed, lacinia est.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at diam commodo, fringilla felis sed, lacinia est.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at diam commodo, fringilla felis sed, lacinia est.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at diam commodo, fringilla felis sed, lacinia est.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at diam commodo, fringilla felis sed, lacinia est.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at diam commodo, fringilla felis sed, lacinia est.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at diam commodo, fringilla felis sed, lacinia est.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at diam commodo, fringilla felis sed, lacinia est.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at diam commodo, fringilla felis sed, lacinia est.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at diam commodo, fringilla felis sed, lacinia est.</li>
+                        </ul>
+                    </li>
+                </p>
+            </section>
+        </main>
+        <aside>
+            <div id="contact-header">
+                <h2>Dados pessoais e de contato</h2>
+                <img src="" alt="dog" id="image-profile">
+            </div>
+            <p>
+                <ul>
+                    <li>data de nascimento</li>
+                    <li>e-mail</li>
+                    <li>celular</li>
+                    <li>
+                        <h4>redes sociais</h3>
+                        <ul>
+                            <li>Lorem ipsun</li>
+                            <li>Lorem ipsun</li>
+                            <li>Lorem ipsun</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+        </aside>
+    </div>
+    <footer>
+        &copy; Copyright 2020 - YtaloWill
+    </footer>
+
+    <script>
+        const data = { username: 'example' };
+
+        fetch('https://dog.ceo/api/breeds/image/random', {
+            method: 'GET'
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            document.getElementById('image-profile').setAttribute('src', data.message)
+            console.log('Success:', data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+    </script>
+</body>
+</html>
