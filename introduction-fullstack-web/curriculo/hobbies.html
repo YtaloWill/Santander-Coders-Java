@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Ytalo William</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/card.css">
+</head>
+<body>
+    <header>
+        <h1>Currículo - Ytalo William</h1>
+    </header>
+    <div id="content">
+        <main>
+            <section class="card">
+                <h3 class="card-title">Lorem ipsum dolor sit. </h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, iusto beatae? Et error deserunt accusantium iure vel excepturi nihil? Culpa illum quo fugit veniam esse necessitatibus quae nisi, et voluptatum.</p>
+            </section>
+            <section class="card">
+                <h3 class="card-title">Lorem ipsum dolor sit. </h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, iusto beatae? Et error deserunt accusantium iure vel excepturi nihil? Culpa illum quo fugit veniam esse necessitatibus quae nisi, et voluptatum.</p>
+            </section>
+            <section class="card">
+                <h3 class="card-title">Lorem ipsum dolor sit. </h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, iusto beatae? Et error deserunt accusantium iure vel excepturi nihil? Culpa illum quo fugit veniam esse necessitatibus quae nisi, et voluptatum.</p>
+            </section>
+            <section class="card">
+                <h3 class="card-title">Lorem ipsum dolor sit. </h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, iusto beatae? Et error deserunt accusantium iure vel excepturi nihil? Culpa illum quo fugit veniam esse necessitatibus quae nisi, et voluptatum.</p>
+            </section>
+            <section class="card">
+                <h3 class="card-title">Lorem ipsum dolor sit. </h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, iusto beatae? Et error deserunt accusantium iure vel excepturi nihil? Culpa illum quo fugit veniam esse necessitatibus quae nisi, et voluptatum.</p>
+            </section>
+        </main>
+        <aside>
+            <div id="contact-header">
+                <h2>Dados pessoais e de contato</h2>
+                <img src="" alt="dog" id="image-profile">
+            </div>
+            <p>
+                <ul>
+                    <li>data de nascimento</li>
+                    <li>e-mail</li>
+                    <li>celular</li>
+                    <li>
+                        <h4>redes sociais</h3>
+                        <ul>
+                            <li>Lorem ipsun</li>
+                            <li>Lorem ipsun</li>
+                            <li>Lorem ipsun</li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="contact.html">Entre em contato</a></li>
+                </ul>
+            </p>
+        </aside>
+    </div>
+    <footer>
+        &copy; Copyright 2020 - YtaloWill
+    </footer>
+
+    <script>
+        fetch('https://dog.ceo/api/breeds/image/random', {
+            method: 'GET'
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            document.getElementById('image-profile').setAttribute('src', data.message)
+            console.log('Success:', data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+    </script>
+</body>
+</html>
