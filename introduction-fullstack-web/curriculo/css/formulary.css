@@ -1,0 +1,56 @@
+form div {
+    margin: 0 0 15px 0;
+}
+
+fieldset {
+    padding: 20px;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"], textarea {
+    display: block;
+    width: 50%;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin: 5px;
+}
+
+textarea {
+    resize: none;
+    border: 5px;
+    width: 51%;
+    padding: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+    margin-bottom: 0;
+    float: right;
+}
+
+button:hover {
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.3);
+}
+
+button[type="reset"] {
+    color: #555;
+    background-color: #ccc;
+    width: 100px;
+    height: 50px;
+}
+
+button[type="submit"] {
+    color: #fff;
+    background-color: #4DB05A;
+    width: 100px;
+    height: 50px;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Ytalo William</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formulary.css">
+</head>
+<body>
+    <header>
+        <h1>Currículo - Ytalo William</h1>
+    </header>
+    <div id="content">
+        <main>
+            <h2>Entre em contato</h2>
+            <form>
+                <fieldset id="general-information">
+                    <legend>Informações Gerais</legend>
+                    <div>
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+
+                    <div>
+                        <label for="surname">Sobrenome:</label>
+                        <input type="text" name="surname" id="surname">
+                    </div>
+
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    
+                    <div>
+                        <label for="gender">Gênero:</label>
+                        <input type="radio" name="gender" value="male">Masculino<br>
+                        <input type="radio" name="gender" value="female">Feminino<br>
+                        <input type="radio" name="gender" value="other">Outro<br>
+                    </div>
+
+                    <div>
+                        <label for="hobby">Passatempos:</label>
+                        <input type="checkbox" name="hobby" value="chess">Jogar xadrez<br>
+                        <input type="checkbox" name="hobby" value="read">Leitura<br>
+                        <input type="checkbox" name="hobby" value="music">Tocar instrumentos musicais<br>
+                        <input type="checkbox" name="hobby" value="meditation">Praticar meditação<br>
+                        <input type="checkbox" name="hobby" value="watercollor">Pintar em aquarela<br>
+                    </div>
+                </fieldset>
+
+                <fieldset id="message">
+                    <legend>Mensagem</legend>
+                    <div>
+                        <label for="subject">Assunto:</label>
+                        <input type="text" name="subject" id="subject">
+                    </div>
+                    <div>
+                        <label for="comments">Comentário:</label>
+                        <div id="textarea-field">
+                            <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+                <div id="buttons">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </div>
+            </form>
+        </main>
+        <aside>
+            <div id="contact-header">
+                <h2>Dados pessoais e de contato</h2>
+                <img src="" alt="dog" id="image-profile">
+            </div>
+            <p>
+                <ul>
+                    <li>data de nascimento</li>
+                    <li>e-mail</li>
+                    <li>celular</li>
+                    <li>
+                        <h4>redes sociais</h3>
+                        <ul>
+                            <li>Lorem ipsun</li>
+                            <li>Lorem ipsun</li>
+                            <li>Lorem ipsun</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+        </aside>
+    </div>
+    <footer>
+        &copy; Copyright 2020 - YtaloWill
+    </footer>
+
+    <script>
+        fetch('https://dog.ceo/api/breeds/image/random', {
+            method: 'GET'
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            document.getElementById('image-profile').setAttribute('src', data.message)
+            console.log('Success:', data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+    </script>
+</body>
+</html>
