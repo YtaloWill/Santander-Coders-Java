@@ -4,7 +4,7 @@ Curso de Desenvolvimento Web patrocinado pelo Santander com aulas ministradas pe
 
 ## Professor
 
-Franklin Barreto
+Franklin Barreto e Gerson
 
 ## Conteudos:
 
