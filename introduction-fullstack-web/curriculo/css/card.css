@@ -1,7 +1,8 @@
 .card {
     width: 100%;
     height: 5%;
-    min-height: 200px;
+    min-height: 100px;
+    margin: 20px 0;
 }
 
 .card-title {
@@ -15,3 +16,8 @@
     margin: 15px;
     font-size: 1.1em;
 }
+
+@media only screen and (max-width: 600px) {
+    .card {
+        height: min-content;
+    }

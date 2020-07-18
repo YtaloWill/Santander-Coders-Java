@@ -72,5 +72,9 @@ aside ul {
     aside {
         width: 100%;
         text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
