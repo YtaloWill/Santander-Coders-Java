@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    color: #FCEBBB;
+    color: #ff0;
     font-style: italic;
 }
 
@@ -25,6 +25,7 @@ aside {
 
 footer {
     padding-top: 10px;
+    color: #ff0;
 }
 
 p {
@@ -60,7 +61,12 @@ aside img {
     border-radius: 50%;
 }
 
-aside ul {
+a, a:visited, a:active, a:hover {
+    font-style: none;
+    color: #fff;
+}
+
+ul {
     list-style: none;
 }
 
